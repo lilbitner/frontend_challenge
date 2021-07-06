@@ -1,5 +1,5 @@
 import React from 'react';
-import { demoList, routes } from '../../mockData/demo-constants';
+import { demoList, routes } from '../../constants/demo-constants';
 import { useHistory } from 'react-router-dom';
 import { DemoList } from '../atoms/demo-list';
 import DemoListTemplate from '../templates/demo-list-template';

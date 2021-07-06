@@ -7,7 +7,7 @@ const StyledCard = styled(Card)({
   border: '1px solid black',
   minWidth: 'fit-content',
   textAlign: 'center',
-  flexGrow: 1
+  flexGrow: 1,
 })
 
 const StyledCardContent = styled(CardContent)({ minHeight: '3rem' });
@@ -15,7 +15,7 @@ const StyledCardContent = styled(CardContent)({ minHeight: '3rem' });
 interface ISlideCard {
   children: any
   identifier?: string | number
-  handleClick?: any
+  handleClick?: (values?:any) => void
 };
 
 export const SlideCard: React.FC<ISlideCard> = ({ children, handleClick = _.noop, identifier = 0 }: ISlideCard) => (

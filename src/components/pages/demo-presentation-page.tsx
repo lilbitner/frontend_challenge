@@ -1,12 +1,13 @@
 import React from 'react';
 import { DemoPresentation } from '../organisms/demo-presentation';
-import { demoSlides, routes, presentationTime } from '../../mockData/demo-constants';
+import { demoSlides, routes, presentationTime } from '../../constants/demo-constants';
 import { styled } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import DemoTemplate from '../templates/demo-presentation-template';
 import { SlideModal } from '../molecules/slide-modal';
 import { DemoButton } from '../atoms/demo-button';
 
+const ModalText = styled('h4')({ marginBottom: '1rem' })
 const ModalContent = styled('div')({
     alignItems: 'center',
     backgroundColor: 'white',
@@ -31,7 +32,7 @@ export const DemoPresentationPage: React.FC = () => {
 
     const modalContent = (
         <ModalContent>
-            {`Presentation time: ${fullPresentationTime} minutes`}
+            <ModalText>{`Presentation time: ${fullPresentationTime} minutes`}</ModalText>
             <DemoButton handleClick={() => history.push(routes.demoList) }>Home</DemoButton>
         </ModalContent>
     )

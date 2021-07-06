@@ -16,7 +16,7 @@ export const SlideModal: React.FC<ISlideModal> = ({ children, buttonLabel, handl
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
       setOpen(true);
-      if (handleButtonClick) handleButtonClick(new Date()); // send stop time
+      handleButtonClick(new Date()); // send stop time
     };
     const handleClose = () => setOpen(false);
 

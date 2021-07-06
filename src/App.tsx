@@ -1,4 +1,4 @@
-import { routes } from './mockData/demo-constants';
+import { routes } from './constants/demo-constants';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import DemoPresentationPage from './components/pages/demo-presentation-page'

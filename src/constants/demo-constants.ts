@@ -10,7 +10,20 @@ export const demoList = [
     },
 ];
 
-export const demoSlides = ['html', 'web' , 'image', 'html', 'web', 'image', 'html', 'web', 'image', 'html', 'web', 'image'];
+export const demoSlides = [
+    'html',
+    'web' ,
+    'image',
+    'html',
+    'web',
+    'image',
+    'html',
+    'web',
+    'image',
+    'html',
+    'web',
+    'image',
+];
 
 export const presentationTime = 12;
 

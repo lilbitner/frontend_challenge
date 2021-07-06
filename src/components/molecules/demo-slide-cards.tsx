@@ -9,8 +9,10 @@ const ContentContainer = styled('div')({
   minHeight: '95vh',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-evenly',
   padding: '1rem',
+  '& > div': {
+    marginBottom: '1rem'
+  }
 });
 
 interface IDemoSlideCards {
