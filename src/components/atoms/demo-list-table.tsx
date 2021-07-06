@@ -10,7 +10,7 @@ interface IDemoList {
 const TableCard = styled('div')({ backgroundColor: 'white', width: '40%' });
 const TablePaper = styled(Paper)({ border: '1px solid black' });
 
-export const DemoList: React.FC<IDemoList> = ({ demoInfo, handleRowClick }: IDemoList) => {
+export const DemoListTable: React.FC<IDemoList> = ({ demoInfo, handleRowClick }: IDemoList) => {
   const buttonNode = <DemoButton handleClick={handleRowClick}>Start</DemoButton>;
   return (
     <TableCard>

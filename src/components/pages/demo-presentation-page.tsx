@@ -4,7 +4,7 @@ import { demoSlides, routes, presentationTime } from '../../constants/demo-const
 import { styled } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import DemoTemplate from '../templates/demo-presentation-template';
-import { SlideModal } from '../molecules/slide-modal';
+import { SlideModal } from '../molecules/demo-modal';
 import { DemoButton } from '../atoms/demo-button';
 
 const ModalText = styled('h4')({ marginBottom: '1rem' })
